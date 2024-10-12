@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Dushmanta Sahu - Research and Academic Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            background-image: url('header-background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #007bff 3px solid;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            cursor: pointer;
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(53, 66, 74, 0.8);
+            z-index: -1;
+        }
+        header h1 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+        header h2 {
+            margin: 5px 0;
+            font-size: 18px;
+            font-weight: normal;
+            color: #cccccc;
+        }
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #007bff;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        nav ul li a.active {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+        nav ul li a:hover {
+            background-color: #0056b3;
+            color: #ffffff;
+        }
+        .section-title {
+            font-size: 24px;
+            color: #007bff;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+        .section-content p {
+            margin-bottom: 15px;
+        }
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border-top: #007bff 3px solid;
+        }
+        .publication {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        .publication img {
+            width: 300px;
+            height: auto;
+            margin-right: 20px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .publication-details {
+            flex: 1;
+        }
+        .publication-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 0 10px;
+            color: #007bff;
+        }
+        .publication-authors {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .publication-journal {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .publication-description {
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* Lightbox Styles */
+        #lightbox-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        #lightbox-overlay img {
+            max-width: 80%;
+            max-height: 80%;
+            border: 3px solid #fff;
+            border-radius: 10px;
+        }
+.icon-links {
+    display: flex;
+    align-items: center; /* Center icons vertically */
+    justify-content: flex-end; /* Align icons to the right */
+    gap: 10px; /* Adds consistent spacing between icons */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+.icon-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-links a img {
+    border-radius: 50%; /* Make the image icons circular */
+    border: 2px solid #ffffff; /* Apply a white border */
+    padding: 3px; /* Add padding for the icons */
+}
+
+.icon-links a img:hover {
+    border-color: #007bff; /* Change border color to blue on hover */
+}
+
+.icon-links a:hover {
+    color: #007bff;
+}
+
+
+    </style>
+    <!-- Load FontAwesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header-background">
+        <div class="icon-links">
+           <a href="mailto:Dushmanta.Sahu@cern.ch"><i class="fas fa-envelope"></i></a>
+            <a href="https://inspirehep.net/authors/1843104?ui-citation-summary=true" target="_blank"><img src="favicon.jpg" alt="Inspire" style="width:24px; height:24px;"></a>
+            <a href="https://orcid.org/0000-0001-8980-1362" target="_blank"><img src="orcid.jpg" alt="ORCID" style="width:24px; height:24px;"></a>
+            <a href="https://scholar.google.com/citations?user=PWq9J94AAAAJ&hl=en&oi=ao" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+            <a href="https://www.researchgate.net/profile/Dushmanta-Sahu/research?ev=prf_act&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6ImhvbWUiLCJwYWdlIjoicHJvZmlsZSIsInByZXZpb3VzUGFnZSI6ImhvbWUiLCJwb3NpdGlvbiI6InBhZ2VIZWFkZXIifX0" target="_blank"><i class="fas fa-flask"></i></a>
+            <a href="https://github.com/dushmanta97" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        
+        <img src="profile.jpg" alt="Dr. Dushmanta Sahu" id="profile-pic">
+        <h1>Dr. Dushmanta Sahu</h1>
+        <h2>Experimental physicist, ALICE experiment, CERN</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="talks.html">Talks</a></li>
+                <li><a href="CV-Dushmanta-Sahu.pdf" target="_blank">Download CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <div class="section-title">About Me</div>
+            <div class="section-content">
+                <p>I finished my PhD from Indian Institute of Technology Indore, India in June 2024. My topic of research was mainly quark gluon plasma. I did my Bachelor's degree with Honors in Physics from T.F. College, Bargarh, Odisha, India. My Master's degree was in High Energy Physics specialization from Sambalpur University, Odisha, India.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="section-title">Contact</div>
+            <div class="section-content">
+                <p>Email: Dushmanta.Sahu@cern.ch, imdushmanta@gmail.com</p>
+                <p>Phone: +917682866142</p>
+                <p>Address: At- Baulsingha, Po- Tejagola, Via- Bhatli,
+                Bargarh, Odisha, India, PIN- 768030</p>
+            </div>
+        </section>
+
+        <section id="publications">
+            <div class="section-title">Recent Publications</div>
+            <div class="section-content">
+                <div class="publication">
+                    <img src="publication1.jpg" alt="Publication 1" class="publication-img">
+                    <div class="publication-details">
+                        <div class="publication-title">Anisotropy of magnetized quark matter</div>
+                        <div class="publication-authors">K. Goswami, D. Sahu, M. Mondal, R. Sahoo</div>
+                        <div class="publication-journal">Physical Review D 107, 094031 (2024)</div>
+                        <div class="publication-description">We study the anisotropy in the speed of sound and isothermal compressibility within the magnetized quark matter as a function of temperature (T) and magnetic field (eB). This study helps us to understand the extent of directionality generated in the initial stages of noncentral collisions while giving us useful information about the system.</div>
+                    </div>
+                </div>
+                <div class="publication">
+                    <img src="publication2.jpg" alt="Publication 2" class="publication-img">
+                    <div class="publication-details">
+                        <div class="publication-title">J/ψ and ψ(2S) polarization in proton-proton collisions at energies available at the CERN Large Hadron Collider using PYTHIA8</div>
+                        <div class="publication-authors">B. Sahoo, D. Sahu, S. Deb, C. R. Singh, R. Sahoo</div>
+                        <div class="publication-journal">Physical Review C 109, 034910 (2024)</div>
+                        <div class="publication-description">The production mechanisms of charmonium states in both hadronic and heavy-ion collisions hold great significance for investigating the hot and dense QCD matter. Studying charmonium polarization in ultrarelativistic collisions can also provide insights into the underlying production mechanisms. With this motivation, we explore the J/ψ and ψ(2S) polarization in proton+proton collisions at √s = 7, 8, and 13 TeV using a pQCD-inspired Monte Carlo event generator called PYTHIA8. This work considers reconstructed quarkonia through their dimuons decay channel in the ALICE forward rapidity acceptance range of 2.5 < yμμ < 4. Further, we calculate the polarization parameters λθ, λφ, λθφ from the polar and azimuthal angular distributions of the dimuons in helicity and Collins-Soper frames. This study presents a comprehensive measurement of the polarization parameters as a function of transverse momentum, charged-particle multiplicity, and rapidity at the LHC energies. Our findings of charmonium polarization are in qualitative agreement with the corresponding experimental data.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Dr. Dushmanta Sahu. All rights reserved.</p>
+    </footer>
+
+    <!-- Lightbox HTML -->
+    <div id="lightbox-overlay">
+        <img id="lightbox-img" src="" alt="Expanded Image">
+    </div>
+
+    <script>
+        const images = document.querySelectorAll('.publication-img, #profile-pic');
+        const lightboxOverlay = document.getElementById('lightbox-overlay');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                if (image.id === 'profile-pic') {
+                    lightboxImg.src = 'profile.jpg';
+                } else {
+                    lightboxImg.src = image.src;
+                }
+                lightboxOverlay.style.display = 'flex';
+            });
+        });
+
+        lightboxOverlay.addEventListener('click', () => {
+            lightboxOverlay.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
